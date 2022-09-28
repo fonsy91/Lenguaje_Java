@@ -1,7 +1,5 @@
 package Java.CursoJava.Bloque_1;
 
-import java.util.Scanner;   //paquete de util para poder coger valores por la entrada de teclado 
-
 /*
  * CURSO DE JAVA 
  * LINK DEL CURSO: https://www.youtube.com/watch?v=YMyJLs22uY4&list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk&index=13&ab_channel=pildorasinformaticas
@@ -28,12 +26,7 @@ public class Cadenas {
         //Comparacion de cadenas equals distinge entre mayusculas y minusculas alumno1 y alumno2 sera false 
         System.out.println(alumno1.equals(alumno2));
 
-        //Con system indicamos que la entrada sera por teclado 
-        Scanner entradaTeclado = new Scanner(System.in); 
-        System.out.print("Hola ingrese su nombre: ");
-        String cadena=entradaTeclado.nextLine();
-        System.out.println("Hola "+cadena+" Bienvenido!!");
-        entradaTeclado.close();
+        
         
     }
 }
