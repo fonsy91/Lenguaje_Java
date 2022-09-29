@@ -26,8 +26,7 @@ public class Cadenas {
         //Comparacion de cadenas equals distinge entre mayusculas y minusculas alumno1 y alumno2 sera false 
         System.out.println(alumno1.equals(alumno2));
 
-        
-        
+
     }
 }
 

@@ -54,5 +54,55 @@ public class CondicionalesBucles {
             }
         } 
 
+        //Bucles *********************
+        /* 
+        String clave="Juan";
+        String pass="";
+        //No saldra del bucle while hasta que no se introduzca la contraseña correcta 
+        while (clave.equals(pass) == false) {
+            pass=JOptionPane.showInputDialog("Introduce la contraseña porfavor");
+            if (clave.equals(pass) == false) {
+                System.out.println("Contraseña incorrecta");
+            }
+        }
+        */
+        System.out.println("Contraseña correcta, acceso permitido");
+
+        //Bucles **********************
+        //Nos devuelve un numero aleatorio entre 1 y 100 en decimal 
+        int aleatorio=(int)(Math.random()*100);
+        System.out.println(aleatorio);
+
+        String genero="";
+        do {
+            genero=JOptionPane.showInputDialog("Introduce tu genero (H/M)");
+        } while (genero.equalsIgnoreCase("H") == false && genero.equalsIgnoreCase("M") == false);
+
+        int altura=Integer.parseInt(JOptionPane.showInputDialog("Introduce altura en centimetros"));
+        int pesoideal=0;
+        if (genero.equalsIgnoreCase("H")) {
+            pesoideal=altura-110;
+        }
+        else if(genero.equalsIgnoreCase("M")){
+            pesoideal=altura-120;
+        }
+
+        System.out.println("Tu peso ideal es: "+pesoideal);
+
+        //Bucles **********************
+        boolean arroba=false;
+        String email=JOptionPane.showInputDialog("Introduce tu email");
+        for (int i = 0; i < email.length(); i++) {
+            if (email.charAt(i) == '@') {
+                arroba=true;
+            }
+        }
+        if (arroba==true) {
+            System.out.println("El email es correcto");
+        }else{
+            System.out.println("El email es incorrecto");
+        }
+
+
     }
 }
