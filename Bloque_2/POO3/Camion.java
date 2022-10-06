@@ -46,11 +46,6 @@ public class Camion extends Vehiculo{
         if (boton == true) {
             System.out.println("Descargando carga");    
         }
-        
-    }
-
-    public void mostrar(){
-        System.out.println("Datos: \n"+" NEjes: "+nEjes+"\n Peso: "+pesoTransporte+" \n TCaraga: "+tipoCarga);
     }
 
     @Override

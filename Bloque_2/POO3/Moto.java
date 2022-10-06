@@ -37,10 +37,6 @@ public class Moto extends Vehiculo{
         }
     }
 
-    public void mostrar(){
-        System.out.println("Datos: \n"+" Cilindrada: "+cilindrada+"\n Cajon: "+cajon);
-    }
-
     @Override
     public String toString(){
         return "Moto: "+cilindrada+" "+cajon;

@@ -46,11 +46,9 @@ public class Principal {
             System.out.println("Introduzca una opcion: ");
             opcion = entradaTeclado.nextInt();
             System.out.println("1. Ver Vehiculos: ");
-            System.out.println("2. Ver datos de camion: ");
-            System.out.println("3. Ver datos de moto: ");
-            System.out.println("4. Probar descarga de camion: ");
-            System.out.println("5. Probar cajon de moto: ");
-            System.out.println("6. Salir: ");
+            System.out.println("2. Probar descarga de camion: ");
+            System.out.println("3. Probar cajon de moto: ");
+            System.out.println("4. Salir: ");
 
             switch (opcion) {
                 case 1:
@@ -60,13 +58,19 @@ public class Principal {
                         System.out.println(elemento.toString());
                     }
                     break;
+                case 2:
+                    iveco.descargar(true);
+                    break;
+                case 3:
+                    ktm.abrirCajon(true);
+                    break;
             
                 default:
                 System.out.println("Esta opcion no es valida");
                     break;
             }
 
-        } while (opcion == 6);
+        } while (opcion == 4);
 
         entradaTeclado.close();
         
