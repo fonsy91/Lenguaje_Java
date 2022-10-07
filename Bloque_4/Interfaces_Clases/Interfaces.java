@@ -62,6 +62,9 @@ public class Interfaces {
         Empleado empleJefe = new Empleado("Luis", 1700, 31);
         System.out.println(empleJefe.tomarDecision("Subele el sueldo a Pedro"));
 
+        //Las Interfaces tambien pueden heredar de otras interfaces 
+
+
 
     }
 }

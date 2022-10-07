@@ -5,5 +5,7 @@ public interface Interface {
 
     //Declaracion de los metodos de la interfaz 
     String tomarDecision(String decision);
+    //constante 
+    double subesueldo=150;
     
 }
