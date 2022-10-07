@@ -60,7 +60,7 @@ public class Interfaces {
 
         //CRECION DE NUESTRAS PROPIAS INTERFACES ***************************************
         Empleado empleJefe = new Empleado("Luis", 1700, 31);
-        System.out.println(empleJefe.tomarDecision("Subele el sueldo a Alfonso"));
+        System.out.println(empleJefe.tomarDecision("Subele el sueldo a Pedro"));
 
 
     }
