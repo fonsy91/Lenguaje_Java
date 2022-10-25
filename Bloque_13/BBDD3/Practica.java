@@ -73,7 +73,7 @@ class Marco_Aplicacion extends JFrame{
         //----------------------CONEXION BBDD--------------------------
         try {
             //Creamos la conexion con la base de datos, se hara uso de la clase DriverManager 
-            miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/productos", "root", "Am618294215");
+            miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/productos", "root", "tucontraseñaBBDD");
             //Creamos un objeto Statement 
             Statement sentencia = miConexion.createStatement();
             //-----------CARGA JCOMBOX SECCIONES-----------------------------
