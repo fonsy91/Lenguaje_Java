@@ -14,7 +14,7 @@ public class Conexion {
     public Connection dameConexion(){
         try {
             //Creamos la conexion con la base de datos, se hara uso de la clase DriverManager 
-            miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/productos", "root", "Am618294215");
+            miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/productos", "root", "tucontraseñaBBDD");
         }catch(Exception e){}
 
         return miConexion;
